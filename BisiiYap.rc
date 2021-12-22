@@ -1,0 +1,229 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Turkish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_TRK)
+#ifdef _WIN32
+LANGUAGE LANG_TURKISH, SUBLANG_DEFAULT
+#pragma code_page(1254)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AYAR DIALOG DISCARDABLE  0, 0, 402, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "bi$ii yap © 2004 Erdinc AKAN http://erdincakan.rules.it"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "ekle -->",IDC_ADD_ACTION,12,81,34,14
+    EDITTEXT        IDC_COMMAND,48,40,89,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_URL,48,40,89,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_URLOUT,18,62,121,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "tamamdir bitti (kol gibi buton koydum cevat aðbi)",IDOK,
+                    34,150,362,21
+    COMBOBOX        IDC_ACTION_CB,47,16,89,65,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "tiki$tir -->",IDC_INSERT_AFTER,51,81,37,14
+    LTEXT           "url",IDC_STATIC_URL1,18,41,8,8
+    CONTROL         "devre di$i",IDC_DISABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,115,47,10
+    CONTROL         "durum penceresini göstert",IDC_SHOWSTATUS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,86,133,97,10
+    LISTBOX         IDC_ACTIONS,155,24,116,51,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "komut",IDC_STATIC_COMMAND1,18,41,20,8
+    GROUPBOX        "$öyle yap:",IDC_STATIC,11,30,132,48
+    PUSHBUTTON      "güncelle",IDC_UPDATE,93,81,50,14
+    PUSHBUTTON      "sil",IDC_DELETE,237,77,34,14
+    LTEXT           "sonucunu buna yaz",IDC_STATIC_URLOUT,18,52,63,8
+    LTEXT           "$unu yap:",IDC_STATIC,11,18,32,8
+    CONTROL         "hata olunca uyar",IDC_ENABLEERRORS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,133,69,10
+    CONTROL         "ID3 bilgisini girc girc",IDC_GATHERID3INFO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,86,115,78,10
+    GROUPBOX        "helal olsun kim yapmi$ bunu?",IDC_STATIC,282,4,116,142
+    EDITTEXT        IDC_HAKKI,285,16,110,108,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    GROUPBOX        "$ukela:",IDC_STATIC,5,4,275,96
+    GROUPBOX        "olay listesi:",IDC_STATIC,149,14,127,81
+    GROUPBOX        "ayar ol:",IDC_STATIC,5,103,275,43
+    ICON            IDI_ICONNORMAL,IDC_STATIC,8,150,20,20
+    CONTROL         "traskbar'da icon göstert",IDC_SHOWINTASKBAR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,186,115,89,10
+    PUSHBUTTON      "goz kadar yerden nasil okuyacam",IDC_READMEBTN,285,128,
+                    110,14
+END
+
+IDD_DURUM DIALOGEX 0, 0, 215, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "bi$ii yap © 2004 Erdinc AKAN"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_STATUS,37,20,167,12,ES_CENTER | ES_AUTOHSCROLL | NOT 
+                    WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "yikil gözümün önünden bre kafir!",IDC_DISMISS,55,37,130,
+                    14
+    GROUPBOX        "Merkez durum nedir?",IDC_STATIC,3,4,210,52
+    ICON            IDI_ICONNORMAL,IDC_STATIC,13,20,21,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_AYAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 395
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_DURUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICONNORMAL          ICON    DISCARDABLE     "res\\iconnorm.ico"
+IDI_ICONDISABLED        ICON    DISCARDABLE     "res\\icondisa.ico"
+IDI_ICONBLINK           ICON    DISCARDABLE     "res\\iconblink.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_ANAMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "TrayMenusu"
+    BEGIN
+        MENUITEM "bidaa bidaa",                 ID_TRAYMENUSU_BIDAABIDAA
+        MENUITEM SEPARATOR
+        MENUITEM "durum penceresini gostert",   ID_TRAYMENUSU_SHOWDURUM
+        MENUITEM SEPARATOR
+        MENUITEM "pasif ol",                    ID_TRAYMENUSU_PASIFOL
+        MENUITEM "aktif ol",                    ID_TRAYMENUSU_AKTIFOL
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041f04b0"
+        BEGIN
+            VALUE "Comments", "digidik digidik digidik clup gulu gulu gulu\0"
+            VALUE "CompanyName", "Erdinc AKAN Research Corp. (hala bulamadýk... vah vak)\0"
+            VALUE "FileDescription", "gen_bi$iiyap Winamp icin yazilmis, sarki degisince bi$iler yapan gayret naif bir plug-in'dir.\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "gen_bi$iiyap\0"
+            VALUE "LegalCopyright", "Copyright © 2004 Erdinc AKAN\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "gen_bi$iiyap.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "bi$ii yap\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x41f, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // Turkish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

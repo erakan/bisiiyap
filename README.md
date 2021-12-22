@@ -8,7 +8,7 @@ I wanted to share the song names on my blog that I was listening on Winamp while
 
 ## License
 
-This project is licensed under the GNU General Public License - see the LICENSE.md file for details 
+This project is licensed under the GNU General Public License - see the LICENSE file for details 
 
 ---
 
